@@ -1,0 +1,33 @@
+// mixins :
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// functions :
+
+@function px-to-rem($px) {
+  @return calc($px / 16px) * 1rem;
+}
+
+// colors :
+
+$color-primary: #0c1c22;
+$color-background: #f6e9d1;
+$color-accent: #ba3236;
+
+// fonts :
+
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Inter", sans-serif;
+
+// font sizes :
+
+$fs-s: px-to-rem(14px);
+$fs-m: 1rem;
+$fs-l: px-to-rem(24px);
+$fs-xl: px-to-rem(32px);
+$fs-xxl: px-to-rem(64px);

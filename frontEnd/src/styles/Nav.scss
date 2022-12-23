@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  .nav__logo {
+    font-size: $fs-xl;
+    font-weight: 700;
+    color: $color-accent;
+  }
+  .nav__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    li {
+      list-style: none;
+      &:hover {
+        color: $color-accent;
+        border-bottom: 2px solid $color-primary;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

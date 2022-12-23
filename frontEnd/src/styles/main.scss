@@ -1,0 +1,101 @@
+// fonts import
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@700&display=swap");
+
+// Importing variables
+@import "./variables.scss";
+@import "./Nav.scss";
+@import "./Hero.scss";
+@import "./PriceSection.scss";
+@import "./FormSection.scss";
+
+// basic resets :
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: $font-secondary;
+  color: $color-primary;
+  background-color: $color-background;
+  line-height: 1.5;
+  h1,
+  h2,
+  h3 {
+    font-family: $font-primary;
+  }
+}
+
+// utility classes
+.App {
+  margin: 0 80px;
+}
+.accent__span {
+  color: $color-accent;
+}
+
+.button__primary {
+  background-color: $color-accent;
+  color: $color-background;
+  padding: px-to-rem(14px) px-to-rem(28px);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $color-primary;
+  }
+}
+.button__secondary {
+  background-color: $color-background;
+  color: $color-accent;
+  padding: px-to-rem(14px) px-to-rem(28px);
+  border: 2px solid $color-accent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $color-accent;
+    color: $color-background;
+  }
+}
+
+//
+.section__number {
+  position: absolute;
+  top: -40px;
+  left: 40px;
+
+  font-family: $font-primary;
+  font-size: $fs-xxl;
+  font-weight: 800;
+  color: $color-accent;
+}
+
+// inputs
+input,
+textarea {
+  font-size: 1rem;
+  color: $color-primary;
+  background-color: $color-background;
+  border: 2px solid $color-accent;
+  padding: px-to-rem(14px) px-to-rem(28px);
+  // border-radius: 5px;
+  &:focus {
+    outline: none;
+    border: 2px solid $color-primary;
+  }
+}
+textarea {
+  resize: none;
+  height: 100%; // take all the left height
+}

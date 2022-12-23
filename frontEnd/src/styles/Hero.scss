@@ -1,0 +1,32 @@
+.Hero {
+  display: flex;
+  .Hero__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+
+    margin: 150px 0;
+    .home__subtitle {
+      color: $color-accent;
+      font-size: $fs-l;
+    }
+    .home__title {
+      font-size: $fs-xxl;
+      font-weight: 700;
+    }
+    .buttons_container {
+      display: flex;
+      gap: 20px;
+    }
+  }
+  .Hero__right {
+    // center the image
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+}

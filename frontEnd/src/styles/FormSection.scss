@@ -1,0 +1,29 @@
+.FormSection {
+  min-height: 100vh;
+  margin-bottom: 200px; // ! debuging purpose
+  display: flex;
+  gap: 0;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: px-to-rem(40px);
+    padding: 3rem;
+
+    width: 70vw;
+    float: right;
+  }
+  .img_container {
+    height: 100vh;
+    width: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .buttom__primary {
+    &:hover {
+      border: none;
+    }
+  }
+}
