@@ -32,6 +32,10 @@ export const MailSender = () => {
       subject.current.value,
       mailBody.current.value
     );
+    // clear the inputs if the mail is sent
+    destination.current.value = "";
+    subject.current.value = "";
+    mailBody.current.value = "";
   };
   return (
     <section className="FormSection">
