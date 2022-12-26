@@ -1,6 +1,6 @@
 export const config = {
   port: 3131,
-  user: "ziani.taha.ads@gmail.com",
-  pass: "urhjvwqeehnvzhjx" // https://myaccount.google.com/apppasswords
+  user: "YOUR_MAIL@gmail.com",
+  pass: "/YOUR PASSWORD/" // https://myaccount.google.com/apppasswords
 
 }
